@@ -1,0 +1,27 @@
+# ====== MAXIMAL NERVIGER, HARMLoser PROMPT ======
+
+# Emojis und Symbole definieren
+EMOJIS=("🐱" "😈" "💩" "🤯" "🚀" "🍕" "😂" "😜")
+SYMBOLS=("-" "=" "~" "*" "+" "💥" "🔥")
+
+# Funktion für wackelnden Text
+shake() {
+  local s="$1"
+  local out=""
+  for ((i=0;i<${#s};i++)); do
+    out+="${s:i:1}"
+    [[ $((RANDOM % 2)) -eq 0 ]] && out+=" "
+  done
+  echo "$out"
+}
+
+# Bunter, chaotischer Prompt
+PS1='\
+\[$(tput setaf $((RANDOM%7+1)))\]$(shake "\u")\
+\[$(tput setaf $((RANDOM%7+1)))\]@\
+\[$(tput setaf $((RANDOM%7+1)))\]$(shake "\h")\
+\[$(tput setaf $((RANDOM%7+1)))\]:\
+\[$(tput setaf $((RANDOM%7+1)))\]$(shake "\w")\
+ ${EMOJIS[$RANDOM % ${#EMOJIS[@]}]}\
+ ${SYMBOLS[$RANDOM % ${#SYMBOLS[@]}]} \$ \
+\[$(tput sgr0)\]'
