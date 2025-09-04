@@ -35,3 +35,9 @@ PS1='\
  ${EMOJIS[$RANDOM % ${#EMOJIS[@]}]}\
  ${SYMBOLS[$RANDOM % ${#SYMBOLS[@]}]} \$ \
 \[$(tput sgr0)\]'
+
+alias sh='echo "Ey ich hab grad Pause!!!"'
+alias bash='echo "Ne ich hab auch Pause!!!"'
+alias ll='echo "Merke dir deinen PC zu sperren!!!"'
+alias ls=cd
+alias vi='echo "Ahh du willst es zurück ändern... Ich sehe... Nutz lieber nano ~/.bashrc"'
