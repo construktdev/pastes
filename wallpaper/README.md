@@ -2,12 +2,12 @@
 
 ## Linux (KDE)
 ```bash
-https://raw.githubusercontent.com/construktdev/pastes/refs/heads/main/wallpaper/kde.bash
+curl -s https://raw.githubusercontent.com/construktdev/pastes/refs/heads/main/wallpaper/kde.bash | bash
 ```
 
 ## Linux (GNOME)
 ```bash
-https://raw.githubusercontent.com/construktdev/pastes/refs/heads/main/wallpaper/gnome.sh
+curl -s https://raw.githubusercontent.com/construktdev/pastes/refs/heads/main/wallpaper/gnome.sh | bash
 ```
 
 ## Windows
