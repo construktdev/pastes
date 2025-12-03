@@ -14,3 +14,8 @@ curl -s https://raw.githubusercontent.com/construktdev/pastes/refs/heads/main/wa
 ```powershell
 iwr https://raw.githubusercontent.com/construktdev/pastes/refs/heads/main/wallpaper/windows.ps1 | iex
 ```
+
+## Für PCs an meiner Schule
+```powershell
+iwr https://raw.githubusercontent.com/construktdev/pastes/refs/heads/main/wallpaper/schule.ps1 | iex
+```
