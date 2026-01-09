@@ -1,5 +1,5 @@
 $Url  = "https://cdn.construkter.de/wallpaper.png"
-# $Path = "$env:USERPROFILE\Pictures\wallpaper.png"
+$Path = "$env:USERPROFILE\Pictures\wallpaper.png"
 
 Invoke-WebRequest $Url -OutFile $Path
 
